@@ -1,0 +1,94 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "**/*.md"
+      - "docs-local/**"
+      - ".github/ISSUE_TEMPLATE/**"
+      - ".github/labeler.yml"
+      - ".github/dependabot.yml"
+      - ".github/workflows/triage-icon-issue.yml"
+      - ".github/workflows/labeler.yml"
+      - ".github/workflows/dependabot-auto-merge.yml"
+      - "LICENSE"
+      - "TRADEMARK.md"
+      - "LEGAL.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  NODE_VERSION: "20"
+
+jobs:
+  build:
+    name: Build static export
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v6
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Restore Next.js build cache
+        uses: actions/cache@v6
+        with:
+          path: |
+            .next/cache
+          key: nextjs-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-${{ hashFiles('**/*.[jt]s', '**/*.[jt]sx', '!**/node_modules/**') }}
+          restore-keys: |
+            nextjs-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}-
+
+      - name: Build (next export -> out/)
+        # NEXT_PUBLIC_* vars are inlined at build time, so they must be
+        # present here or the production bundle ships with `undefined`
+        # and PostHog never initializes (silently — instrumentation-client.ts
+        # skips init if the key is empty). The 3.0.x release shipped this
+        # broken because the workflow didn't expose the secret.
+        env:
+          NEXT_PUBLIC_POSTHOG_KEY: ${{ secrets.NEXT_PUBLIC_POSTHOG_KEY }}
+          NEXT_PUBLIC_POSTHOG_HOST: ${{ secrets.NEXT_PUBLIC_POSTHOG_HOST }}
+        run: pnpm build
+
+      - name: Disable Jekyll on Pages
+        run: touch out/.nojekyll
+
+      - name: Report build size
+        run: |
+          echo "Total files: $(find out -type f | wc -l)"
+          echo "Total size:  $(du -sh out | cut -f1)"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: ./out
+
+  deploy:
+    name: Deploy to Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,0 +1,47 @@
+{
+  "name": "@thesvg/cli",
+  "version": "0.7.1",
+  "description": "CLI tool to add SVG icons from thesvg.org to your project",
+  "type": "module",
+  "license": "MIT",
+  "author": "thesvg.org",
+  "homepage": "https://thesvg.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glincker/thesvg.git",
+    "directory": "packages/cli"
+  },
+  "bugs": {
+    "url": "https://github.com/glincker/thesvg/issues"
+  },
+  "keywords": [
+    "svg",
+    "icons",
+    "brand",
+    "cli",
+    "thesvg"
+  ],
+  "bin": {
+    "thesvg": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3",
+    "@types/node": "^26.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "provenance": true,
+    "access": "public"
+  }
+}
