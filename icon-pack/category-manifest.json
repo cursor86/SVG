@@ -1,0 +1,162 @@
+{
+  "Animals": {
+    "filled": 4,
+    "outline": 18
+  },
+  "Arrows": {
+    "filled": 100,
+    "outline": 333
+  },
+  "Badges": {
+    "filled": 15,
+    "outline": 22
+  },
+  "Buildings": {
+    "filled": 7,
+    "outline": 95
+  },
+  "Charts": {
+    "filled": 14,
+    "outline": 39
+  },
+  "Communication": {
+    "filled": 11,
+    "outline": 117
+  },
+  "Computers": {
+    "filled": 4,
+    "outline": 44
+  },
+  "Currencies": {
+    "filled": 0,
+    "outline": 76
+  },
+  "Database": {
+    "filled": 5,
+    "outline": 42
+  },
+  "Design": {
+    "filled": 102,
+    "outline": 342
+  },
+  "Development": {
+    "filled": 7,
+    "outline": 62
+  },
+  "Devices": {
+    "filled": 45,
+    "outline": 358
+  },
+  "Document": {
+    "filled": 66,
+    "outline": 203
+  },
+  "E-commerce": {
+    "filled": 26,
+    "outline": 154
+  },
+  "Electrical": {
+    "filled": 0,
+    "outline": 19
+  },
+  "Extensions": {
+    "filled": 0,
+    "outline": 13
+  },
+  "Food": {
+    "filled": 28,
+    "outline": 96
+  },
+  "Games": {
+    "filled": 29,
+    "outline": 48
+  },
+  "Gender": {
+    "filled": 0,
+    "outline": 18
+  },
+  "Gestures": {
+    "filled": 0,
+    "outline": 17
+  },
+  "Health": {
+    "filled": 16,
+    "outline": 87
+  },
+  "Laundry": {
+    "filled": 5,
+    "outline": 40
+  },
+  "Letters": {
+    "filled": 104,
+    "outline": 214
+  },
+  "Logic": {
+    "filled": 0,
+    "outline": 8
+  },
+  "Map": {
+    "filled": 43,
+    "outline": 262
+  },
+  "Math": {
+    "filled": 2,
+    "outline": 88
+  },
+  "Media": {
+    "filled": 27,
+    "outline": 155
+  },
+  "Mood": {
+    "filled": 10,
+    "outline": 52
+  },
+  "Nature": {
+    "filled": 18,
+    "outline": 47
+  },
+  "Numbers": {
+    "filled": 40,
+    "outline": 196
+  },
+  "Photography": {
+    "filled": 13,
+    "outline": 50
+  },
+  "Shapes": {
+    "filled": 49,
+    "outline": 183
+  },
+  "Sport": {
+    "filled": 13,
+    "outline": 76
+  },
+  "Symbols": {
+    "filled": 8,
+    "outline": 37
+  },
+  "System": {
+    "filled": 132,
+    "outline": 781
+  },
+  "Text": {
+    "filled": 34,
+    "outline": 188
+  },
+  "Vehicles": {
+    "filled": 31,
+    "outline": 90
+  },
+  "Version control": {
+    "filled": 0,
+    "outline": 11
+  },
+  "Weather": {
+    "filled": 11,
+    "outline": 61
+  },
+  "Zodiac": {
+    "filled": 0,
+    "outline": 12
+  }
+}
