@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <path d="M58,178 L58,92 C58,58 142,58 142,92 L142,178 Z" fill="#cfc0c9"/>
+  <path d="M58,178 L58,92 C58,58 100,58 100,58 L100,178 Z" fill="#c2b2bc"/>
+  <text x="100" y="110" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="22" fill="#7a6d76">R.I.P</text>
+  <path d="M76,132 L96,140 L80,150" fill="none" stroke="#7a6d76" stroke-width="2"/>
+  <path d="M30,178 C40,160 60,168 62,178 Z" fill="#55642f"/>
+  <path d="M138,178 C148,162 172,168 172,178 Z" fill="#55642f"/>
+  <path d="M8,178 L192,178" stroke="none"/>
+</svg>

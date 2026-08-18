@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5a75c"/>
+      <stop offset="0.45" stop-color="#e8672b"/>
+      <stop offset="1" stop-color="#b0431a"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+  <path d="M118,27 C129,20 134,30 125,34 C119,37 123,45 132,41" fill="none" stroke="#55642f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M92,54 C89,39 96,26 109,21 C118,17 124,22 121,30 C118,41 107,46 101,54 Z" fill="#55642f"/>
+  <ellipse cx="100" cy="114" rx="74" ry="58" fill="url(#body)"/>
+  <path d="M45,72 C39,96 39,132 45,156" fill="none" stroke="#b0431a" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M73,62 C67,92 67,138 73,166" fill="none" stroke="#b0431a" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M127,62 C133,92 133,138 127,166" fill="none" stroke="#b0431a" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <path d="M155,72 C161,96 161,132 155,156" fill="none" stroke="#b0431a" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <ellipse cx="100" cy="118" rx="46" ry="34" fill="#f5a75c" filter="url(#soft)" opacity="0.6"/>
+  <polygon points="60,122 76,95 85,122" fill="#241c2b"/>
+  <polygon points="117,122 129,93 147,122" fill="#241c2b"/>
+  <polygon points="94,129 107,129 100,116" fill="#241c2b"/>
+  <polygon points="58,142 66,150 74,140 82,150 90,140 100,152 110,140 118,150 126,140 134,150 142,142 136,163 100,169 64,163" fill="#241c2b"/>
+</svg>

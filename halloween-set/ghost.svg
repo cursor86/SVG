@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="ghostBody" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffaf2"/>
+      <stop offset="1" stop-color="#f2e2d6"/>
+    </linearGradient>
+  </defs>
+  <path d="M40,150 C40,88 62,46 100,46 C138,46 160,88 160,150 Q152,168 145,150 Q138,168 130,150 Q122,168 115,150 Q107,168 100,150 Q92,168 85,150 Q77,168 70,150 Q62,168 55,150 Q47,168 40,150 Z" fill="url(#ghostBody)"/>
+  <path d="M40,110 C28,112 24,124 32,132 C24,138 30,150 40,146" fill="none" stroke="#f2e2d6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M160,110 C172,112 176,124 168,132 C176,138 170,150 160,146" fill="none" stroke="#f2e2d6" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="80" cy="100" rx="7" ry="9" fill="#241c2b"/>
+  <ellipse cx="120" cy="100" rx="7" ry="9" fill="#241c2b"/>
+  <ellipse cx="100" cy="122" rx="6" ry="7" fill="#241c2b"/>
+</svg>

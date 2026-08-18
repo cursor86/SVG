@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240">
+  <g transform="translate(6,10) scale(0.62)">
+    <defs>
+      <linearGradient id="ghostBodyMini" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#fffaf2"/>
+        <stop offset="1" stop-color="#f2e2d6"/>
+      </linearGradient>
+    </defs>
+    <path d="M40,150 C40,88 62,46 100,46 C138,46 160,88 160,150 Q152,168 145,150 Q138,168 130,150 Q122,168 115,150 Q107,168 100,150 Q92,168 85,150 Q77,168 70,150 Q62,168 55,150 Q47,168 40,150 Z" fill="url(#ghostBodyMini)"/>
+    <ellipse cx="80" cy="100" rx="7" ry="9" fill="#241c2b"/>
+    <ellipse cx="120" cy="100" rx="7" ry="9" fill="#241c2b"/>
+    <ellipse cx="100" cy="126" rx="9" ry="11" fill="#241c2b"/>
+  </g>
+
+  <path d="M175,35 L455,35 C468,35 478,45 478,58 L478,140 C478,153 468,163 455,163 L215,163 L178,204 L188,163 L175,163 C162,163 152,153 152,140 L152,58 C152,45 162,35 175,35 Z" fill="#fbf3e7" stroke="#241c2b" stroke-width="3"/>
+
+  <text x="182" y="112" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="36" fill="#241c2b">
+    <tspan dy="0">b</tspan><tspan dy="-8">o</tspan><tspan dy="9">o</tspan><tspan dy="-9">o</tspan><tspan dy="9">o</tspan><tspan dy="-8">o</tspan><tspan dy="8">o</tspan><tspan dy="-6" font-size="30">~</tspan>
+  </text>
+</svg>
