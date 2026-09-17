@@ -38,11 +38,16 @@ All 200×200 viewBox (the two lettering pieces are wider: 420×200 and
 
 ## Before selling
 
-- The two lettering pieces (`boo-lettering.svg`, `booooo-narration.svg`)
-  use system serif text (`Georgia`/`Times New Roman` fallback) for the
-  wavy "boooooo~" script — open in Illustrator/Inkscape and convert that
-  text to outlines before listing, so it renders identically on every
-  buyer's machine (standard practice for any text-based SVG asset).
 - Positioning note: this competes against $10-for-4,000-icons mega-bundles
   by not trying to be one — sell it as a small, distinct-style set (or
   split into a few micro-bundles) rather than competing on volume.
+
+## Font-independence note
+
+`booooo-narration.svg`'s wavy lettering and `tombstone.svg`'s "R.I.P" were
+originally live `<text>` elements with a system-serif fallback
+(`Georgia`/`Times New Roman`) - both have since been converted to real
+vector path outlines (via `fontTools`, matched against Liberation Serif as
+a metric-compatible substitute), so every file in this set now renders
+identically on any machine with zero font dependency, same as everything
+else in the pack.
